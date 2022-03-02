@@ -5,39 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap" rel="stylesheet">
+    <title>Document</title>
 </head>
 <body>
     <header>
-        <video class="background-video" autoplay loop muted poster="C:\Users\antho\OneDrive\Desktop\Web Development\My Site\img\backgroundvideo.jpg">
-            <source src="C:\Users\antho\OneDrive\Desktop\Web Development\My Site\img\backgroundvideo.mp4" type="video/mp4">
-          </video>
-        <div class="bars" onclick="openNav()">
-            <span class="hamburger barOne"></span>
-            <span class="hamburger barTwo"></span>
-            <span class="hamburger barThree"></span>
-    </div>
-        <img src="" alt="eandl logo" class="logo" />
-    </header>
-    
-    <nav class="side-bar">
-        <div class="close">
-            <span id="cross-one" class="cross x-one"></span>
-            <span id="cross-two" class="cross x-two"></span>
+        <div class="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
-            <a class="nav-link top" href="./index.html">Home</a>  
-              <hr />
-            <a class="nav-link" href="./myprojects.html">My Projects</a>
-            <hr />
-            <a class="nav-link" href="./mystory.html">My Story</a>
-            <hr />
+    </header>
+    <nav class="navigation">
+        <button onclick="window.location.href='./index.html';" class="nav-button">Home</button>
+        <button onclick="window.location.href='./myprojects.html';" class="nav-button" style="color: rgb(150, 1, 1);">My Projects</button>
+        <button onclick="window.location.href='./mystory.html';" class="nav-button">My Story</button>
+        <button onclick="window.location.href='';" class="nav-button"></button>
     </nav>
-    <main>
-            
+    <main class="content">
+         <h1>Please don't make fun.</h1>
     </main>
-    <footer>
-
-    </footer>
+    <footer></footer>
     <script src="js/javascript.js"></script>
 </body>
 </html>
