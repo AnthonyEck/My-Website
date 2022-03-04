@@ -9,9 +9,13 @@
     --navigation-border-color: rgb(14, 151, 14);
     --nav-button-background-color: rgb(30, 30, 30);
     --nav-button-background-hover-color: rgb(40, 40, 40);
+    --nav-button-background-active-color: rgb(20, 20, 20);
     --nav-button-text-color: rgb(14, 151, 14);
     --navigation-box-shadow-color: rgb(14, 151, 14);
     --nav-close-color: rgb(150, 1, 1);
+    --name-color: rgb(150, 1, 1);
+    --name-hover-color: rgb(14, 151, 14);
+    --name-active-color: rgb(150, 1, 1);
 }
 body {
     background-color: var(--body-background-color);
@@ -94,10 +98,34 @@ header {
     background-color: var(--nav-button-background-hover-color);
     transition: 0.2s;
 }
+.nav-button:active {
+    background-color: var(--nav-button-background-active-color);
+    transition: 0.2s;
+}
 .content h1 {
     text-align: center;
     color: rgb(200, 200, 200);
     font-family: 'Londrina Outline', cursive;
     font-size: 3em;
+}
+.name {
+    text-decoration: none;
+    color: var(--name-color);
+    font-family: cursive;
+    /*font-weight: 600;*/
+    font-size: 2em;
+    right: 6em;
+    top: 1em;
+    margin: 0;
+    position: absolute;
+    transition: 0.5s;
+}
+.name:hover {
+    color: var(--name-hover-color);
+    transition: 0.5s;
+}
+.name:active {
+    color: var(--name-active-color);
+    transition: 0.2s;
 }
 
